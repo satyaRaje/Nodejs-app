@@ -9,7 +9,7 @@ var url="https://dog.ceo/api/breeds/list/all";
 app.get("/",(req,res)=>{
 
     request(url,(err,response,body)=>{
-        if(err){
+        if(err){ggggggggggg
             console.log(err);
         }else{
             var output = JSON.parse(body);
@@ -17,11 +17,11 @@ app.get("/",(req,res)=>{
 
             var dt="<ol>";
             var sub_list="";
-            for (var x in output) {
+            for (var x in output) {hhhhh
                     sub_list="<ol>";
                     var sub_array=output[x];
                     for(var i=0;i<sub_array.length;i++){
-                        sub_list+="<li>"+sub_array[i]+"</li>";
+                        sub_list+="<li>"+sub_array[i]+"</li>";bbbb
                     }
                     sub_list+="</ol>";
                 dt+="<li>"+x+sub_list+"</li>";
